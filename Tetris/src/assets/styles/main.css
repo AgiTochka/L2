@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Black Ops One', sans-serif;
+    background: #2f2f2f;
+    color: white;
+
+}
+
+h1{
+    margin-bottom: 25px;
+    font-size: 42px;
+}
+p{
+    font-size: 24px;
+}
+.grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 620px;
+}
+
+.left-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-board {
+    border: solid 2px;
+}
+
+.play-button {
+    background-color: violet;
+    font-size: 20px;
+    color: black;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: inset 5px 5px rgba(253, 254, 255, 0.39),
+    inset -5px -5px rgba(9, 0, 0, 0.42);
+    border: 1px solid black;
+}
+
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.indigo{
+    color: #8b1be1;
+}
+.green{
+    color: #22d722;
+}
+

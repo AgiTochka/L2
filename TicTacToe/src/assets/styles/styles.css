@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    padding: 10px;
+    height: 50px;
+}
+.playground{
+    width: 285px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cell{
+    width: 95px;
+    height: 95px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid grey;
+    border-radius: 15px;
+
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: white;
+}
+
+.back {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.cell.flipped {
+    transform: rotateY(180deg);
+}
+
+.cell img{
+    width: 80px;
+    height: 80px;
+}
+.btn{
+    width: 125px;
+    padding: 5px;
+    margin: 10px;
+    background: white;
+}

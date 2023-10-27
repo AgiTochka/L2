@@ -1,0 +1,25 @@
+.chooseNumbers{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.chooseNumbers input{
+    width: 100px;
+}
+
+.chooseNumbers label{
+    width: 300px;
+}
+
+.gameField{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gameField button{
+    width: 300px;
+}

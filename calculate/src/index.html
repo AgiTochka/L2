@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+    <meta charset="UTF-8">
+    <title>Calculate</title>
+</head>
+<body>
+<h1>Отслеживание калорий</h1>
+<div class="container">
+    <div class="form">
+        <h2>Добавить продукт</h2>
+        <input type="text" id="productName" placeholder="Название продукта">
+        <input type="number" id="calories" placeholder="Калории">
+        <button onclick="addProduct()">Добавить</button>
+    </div>
+    <div class="products">
+        <h2>Продукты</h2>
+        <button onclick="sortNameProducts()">Фильтровать по названию</button>
+        <button onclick="sortCaloriesProducts()">Сортировать по калориям</button>
+        <ul id="productList"></ul>
+    </div>
+    <div class="summary">
+        <h2>Итоги</h2>
+        <p>Потреблено калорий сегодня: <span id="totalCalories">0</span></p>
+        <p>Целевая калорийность: <input type="number" id="targetCalories"></p>
+        <button onclick="setTargetCalories()">Установить цель</button>
+    </div>
+</div>
+<div class="map">
+    <span class="total_label"></span> <label>Осталось</label>
+    <span class="label"></span> <label>Потреблено</label>
+    <span class="more_label"></span> <label>Превышено</label>
+
+</div>
+<canvas id="caloriesChart"></canvas>
+<button onclick="clearData()">Очистить все данные</button>
+<script src="js/main.js"></script>
+<script src="js/localStorage.js"></script>
+<script src="js/sorted.js"></script>
+<script src="js/chart.js"></script>
+
+</body>
+</html>

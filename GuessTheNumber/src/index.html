@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+</head>
+<body>
+<div class="gameField">
+    <div class="chooseNumbers">
+        <label>
+            Выберите начало диапазона:
+            <input id="min" type="number" value=1>
+        </label>
+        <label>
+            Выберите конец диапазона:
+            <input id="max" type="number" value=100>
+        </label>
+    </div>
+
+    <label>
+        Я загадал число, попробуйте его угадать:
+        <input id="number" type="number">
+        <input id="check" type="submit" value="Проверить">
+    </label>
+    <label id="answer"></label>
+    <label id="hints"></label>
+    <label id="counter"></label>
+    <button id="restart">Начать заново</button>
+</div>
+<script src="js/puzzle.js"></script>
+<script src="js/hints.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

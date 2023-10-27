@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сортировка</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Анимация сортировки</h1>
+    <div class="controls">
+        <input id="numbers" type="text" placeholder="Введите массив через запятую">
+        <label for="algorithm">Выберите алгоритм:</label>
+        <select id="algorithm">
+            <option value="bubble">Сортировка пузырьком</option>
+            <option value="selection">Сортировка выбором</option>
+            <option value="insertion">Сортировка вставками</option>
+            <option value="quick">Быстрая сортировка</option>
+            <option value="merge">Сортировка слиянием</option>
+        </select>
+        <button id="start">Начать</button>
+        <button id="stop">Остановить</button>
+    </div>
+    <div class="visualization" id="visualization"></div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/sort.js"></script>
+</body>
+</html>

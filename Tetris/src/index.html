@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/figure.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <div class="grid">
+        <div class="left-column">
+            <div>
+                <h1><span class="red">T</span><span class="blue">E</span><span class="red">T</span><span
+                 class="yellow">R</span><span class="indigo">I</span><span class="green">S</span></h1>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <canvas id="next" class="next"></canvas>
+                <div>
+                    <h2>BEST 10 SCORE</h2>
+                    <p>1.</p>
+                    <p>2.</p>
+                    <p>3.</p>
+                    <p>4.</p>
+                    <p>5.</p>
+                    <p>6.</p>
+                    <p>7.</p>
+                    <p>8.</p>
+                    <p>9.</p>
+                    <p>10.</p>
+                </div>
+            </div>
+            <button onclick="play()" class="play-button">Play</button>
+        </div>
+        <canvas id="board" class="game-board"></canvas>
+    </div>
+
+</main>
+<footer>
+
+</footer>
+
+<script type="text/javascript" src="./js/constants.js"></script>
+<script type="text/javascript" src="./js/board.js"></script>
+<script type="text/javascript" src="./js/piece.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
